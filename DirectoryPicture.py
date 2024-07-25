@@ -5,7 +5,7 @@ from IPython.display import display, HTML
 #from weasyprint import HTML
 
 # Read the CSV file
-df = pd.read_csv("C:\\Users\\bmey2\\Downloads\\Student Roster - Sheet1.csv") #Change csv name for computer being used
+df = pd.read_csv("C:\\Users\\bmey2\\Downloads\\Student Roster - Sheet1 (1).csv") #Change csv name for computer being used
 
 # Start the HTML string
 html_string = '<html><head><title>Student Directory</title></head><body>'
