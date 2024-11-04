@@ -7,7 +7,6 @@ const StudentCard = ({ student }) => {
     <div className="student-card">
       <img src={student.image} alt={`${student.name}'s headshot`} className="student-image" />
       <h3>{student.name}</h3>
-      <p>{student.major}</p>
     </div>
   );
 };

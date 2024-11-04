@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Papa from 'papaparse';
 import Directory from './components/Directory';
+//import images from './public/images';
 
 function App() {
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
-    fetch('/students.csv')
+    fetch('/components/sorted_names.csv') 
       .then(response => response.text())
       .then(csvText => {
         Papa.parse(csvText, {
@@ -14,7 +15,7 @@ function App() {
           complete: (result) => {
             const studentsWithImages = result.data.map(student => ({
               ...student,
-              image: `/images/${student.image}`, // Use the image name from CSV
+              image: student.image ? `/images/headshots - Copy/${student.image}` : '/images/headshots - Copy/Wally.jpg', // Default if undefined
             }));
             setStudents(studentsWithImages);
           },
