@@ -7,7 +7,7 @@ function App() {
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
-    fetch('/components/sorted_names.csv') 
+    fetch('/sorted_names.csv') 
       .then(response => response.text())
       .then(csvText => {
         Papa.parse(csvText, {
@@ -15,7 +15,7 @@ function App() {
           complete: (result) => {
             const studentsWithImages = result.data.map(student => ({
               ...student,
-              image: student.image ? `/images/headshots - Copy/${student.image}` : '/images/headshots - Copy/Wally.jpg', // Default if undefined
+              image: student.image ? `/images/headshots - Copy/CO2026/${student.image}` : '/images/headshots - Copy/Wally.jpg', // Default if undefined
             }));
             setStudents(studentsWithImages);
           },
