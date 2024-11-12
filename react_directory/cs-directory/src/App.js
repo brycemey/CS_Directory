@@ -15,7 +15,7 @@ function App() {
           complete: (result) => {
             const studentsWithImages = result.data.map(student => ({
               ...student,
-              image: student.image ? `/images/headshots - Copy/CO2026/${student.image}` : '/images/headshots - Copy/Wally.jpg', // Default if undefined
+              image: student.image ? `/Student Images/${student.image}` : '/Student Images/Wally.jpg', // Default if undefined
             }));
             setStudents(studentsWithImages);
           },
