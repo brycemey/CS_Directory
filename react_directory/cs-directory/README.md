@@ -70,8 +70,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 IMPORTANT FILES
-App.js & App.css:
+### 'App.js & App.css' :
 
-/src/components/[Directory & StudentCard]:
 
-/public/ [Student Images & sorted_names.csv]:
+
+### /src/components/[Directory & StudentCard]:
+
+### /public/Student Images:
+
+### /public/sorted_names.csv:
